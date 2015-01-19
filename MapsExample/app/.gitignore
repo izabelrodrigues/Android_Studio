@@ -4,5 +4,5 @@
 .DS_Store
 /build
 .idea/
-/gradle.properties
-/ninja_showcase.jks
+gradle.properties
+ninja_showcase.jks
