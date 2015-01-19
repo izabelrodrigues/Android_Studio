@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MapsExample</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <!-- Sua chave do google api gonsole maps v2 -->
+    <string name="google_maps_api_key">AIzaSyAC95j1ezwevGBB1NPWBI8qj1V3HTuKm1E</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

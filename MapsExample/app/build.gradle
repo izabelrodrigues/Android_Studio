@@ -1,0 +1,44 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.2"
+
+    defaultConfig {
+        applicationId "com.izabel.mapsexample"
+        minSdkVersion 10
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+    }
+
+    signingConfigs {
+        release {
+            storeFile file('../ninja_showcase.jks') //caminho da sua keystore
+            storePassword KEYSTORE_PASSWORD //propriedade KEYSTORE_PASSWORD do arquivo gradle.properties
+            keyAlias "ninja_showcase_apps" //alias que você criou quando estava gerando a keystore
+            keyPassword KEY_PASSWORD //propriedade KEY_PASSWORD do arquivo gradle.properties
+        }
+
+        debug {
+            storeFile file('../ninja_showcase.jks')
+            storePassword KEYSTORE_PASSWORD
+            keyAlias "ninja_showcase_apps"
+            keyPassword KEY_PASSWORD
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:21.0.3'
+    compile 'com.google.android.gms:play-services:6.5.87'
+    compile 'com.android.support:support-v4:21.0.3'
+}
