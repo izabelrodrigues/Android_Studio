@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ValidandoFormularios</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="img_content_description"/>
+    <string name="login_user_required">Campo login obrigatório!</string>
+    <string name="login_password_required">Campo senha obrigatório!</string>
+    <string name="login_edt_user_hint">login</string>
+    <string name="login_edt_password_hint">senha</string>
+    <string name="login_lbl_user">Login:</string>
+    <string name="login_lbl_password">Senha:</string>
+    <string name="login_btn_enter_value">Entrar</string>
+    <string name="login_auth_ok">Autenticação Válida!</string>
+    <string name="login_user_size_invalid">Seu login deve ter entre 4 e 15 caracteres!</string>
+    <string name="login_pass_size_invalid">Sua senha deve ter entre 6 e 15 caracteres!</string>
+
+</resources>
